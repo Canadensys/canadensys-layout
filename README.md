@@ -1,2 +1,2 @@
 # canadensys-layout
-Header, footer and static images for ALA components
+Static files, images, pages used with ALA components
