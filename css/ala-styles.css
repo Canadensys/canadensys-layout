@@ -274,6 +274,10 @@ Modifications from ALA Style
 
 .container#main {
     max-width:83.333333%;
+    min-height:70%;
+    background-color: white;
+    padding-top:15px;
+    padding-bottom:15px;
 }
 
 #breadcrumb {
