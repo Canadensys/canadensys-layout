@@ -1,0 +1,371 @@
+/*
+ For css overrides needed for customizations.
+ By having this separate file for css overrides, it should be easier to backup and restore customizations.
+ If some organization want to style the IPT to their own branding and they want to support more backward compatibility
+ they can create their own modernizr.js with the desired supported elements. They only have to replace the 'default'
+ file with their own.
+*/
+#page{
+  margin:0px;
+  min-height:100%;
+}
+
+#menu ul li {
+  margin:0px;
+  line-height:1.1em;
+}
+
+#nav_top{
+  line-height:1.2em;
+}
+
+#nav_title{
+  line-height:1.25em;
+}
+
+#nav_portal{
+  line-height:1.3em;
+}
+
+#section-content{
+  width:100%;
+  padding:0px;
+  margin:36px 0px 90px;
+  font-size: 1.35em;
+   font-weight: normal;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+#zone-content-wrapper{
+  margin:0px;
+  padding: 0 36px;
+  min-width:1024px;
+}
+
+#zone-content{
+  position:relative;
+  /*font-size:1.35em;*/
+  font-weight:normal;
+  /*line-height:1.5em;*/
+}
+
+/* Messages */
+.errorMessage, .actionMessage, .warnMessage{padding:5px;}
+.errorMessage li, .actionMessage li, .warnMessage li{margin-left:20px;padding-left:5px;}
+p.actionMessage, p.warnMessage, p.errorMessage{padding-left:30px;}
+
+#region-content{width:100%;padding:0px;margin:0px;}
+#region-content h1{color:#22241E;font-size:1em;padding:5px 0;}
+#region-content h1 span.superscript{font-size:1em;color:#333;}
+#region-content h1 a.tooltip{font-weight:bold; font-style:italic;}
+#region-content .edit{font-size:20px;}
+#region-content p {line-height:1.35em;font-size:0.8em;}
+#region-content div.resourceOverview div.bodyOverview p{font-size:1em;}
+div.resourceOverview div.bodyOverview{width:auto;}
+div.resourceOverview div.bodyOverview div.details {width:600px;}
+div.resourceOverview div.bodyOverview div.details table th {width:200px;}
+div.resourceOverviewPortal{clear:both;}
+div.resourceOverviewPortal div.title {min-width:190px;}
+div.resourceOverviewPortal div.details {color:#666;}
+div.resourceOverviewPortal div.body th {width:160px;padding-left:0.5em;text-indent:-0.5em;font-weight:normal;}
+#zone-content{margin:0px;margin-bottom:36px;}
+
+#zone-content .grid_18{
+  margin-right: 336px;
+  width:auto;
+}
+
+#zone-content .grid_24 .grid_18{
+  margin-right:0px;
+  display:block;
+  float:none;
+}
+#region-content .grid_24{
+  float:none;
+  display:block;
+}
+div#sidebar{
+  margin-top:0px;
+  font-size:0.8em;
+  line-height:1.25em;
+}
+div#sidebar h2{
+  display:none;
+}
+div#sidebar ul{
+  padding:0px;
+}
+div#sidebar ul li {
+  border-bottom: 1px solid #A8A7A5;
+  padding:0px;
+}
+div#sidebar ul li.current {
+  padding-left:0px;
+  background-color: #d3d3d3;
+}
+div#sidebar ul li:last-child {
+    border-bottom: medium none;
+}
+div#sidebar ul li a{
+  display:block;
+  padding:6px 15px;
+}
+div#sidebar ul li a:hover{
+  text-decoration:none;
+  background-color: #d3d3d3;
+}
+div#sidebar ul li.current a {
+  font-weight:normal;
+  background-color:transparent;
+  background-image:url("http://layout.canadensys.net/common/images/arrow.png");
+  background-position:3px 3px;
+  background-repeat:no-repeat no-repeat;
+}
+#mappingForm ul.sidebar-nav{
+  display:none;
+}
+div.requiredMapping{
+  background-color:#FFF0F5;
+}
+div.mappingFiler{
+  background-color:#fff;
+}
+#wrapper {
+  padding-right: 336px;
+  padding-left:0px;
+  position:relative;
+}
+#one .horizontal-list {
+  position:absolute;
+  right:0px;
+  top:30px;
+  width:300px;
+  margin-right:10px;
+}
+#one .round{
+  border:1px solid #A8A7A5;
+  border-radius:5px;
+}
+
+#one .round:hover,
+#one .round:focus {
+  border:1px solid #a82400;
+  border-radius:5px;
+}
+
+#one .horizontal-list > li {
+  float:none;
+  /*background-color:#E7E7E7;*/
+  background-color:#fff!important;
+  cursor:pointer;
+  display:block;
+  line-height:48px;
+  padding:3px 15px 0px 0px;
+}
+
+#one .horizontal-list > li a {
+  display:block;
+  font-size:15px;
+  height:48px;
+  line-height:48px;
+  padding:0 63px 0 15px;
+  color:#000;
+}
+
+#one .horizontal-list > li a:focus,
+#one .horizontal-list > li a:hover
+ {
+  color:#a82400;
+}
+
+#one .horizontal-list > li a.multi_line {
+  height:100%;
+  line-height:22px;
+  min-height:48px;
+}
+
+.horizontal-list .box{
+  margin-bottom:20px;
+}
+
+#side_bar{
+  padding-right:10px;
+}
+span.doi:before {
+    content: "DOI";
+}
+span.doi {
+    background: none repeat scroll 0 0 black;
+    border-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 4px 0 4px 6px;
+    text-decoration: none;
+    font-size:1em;
+    border:none;
+}
+span.doi a {
+    background: none repeat scroll 0 0 #a82400;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    margin-left: 6px;
+    margin-right:0px;
+    padding: 4px 7px 4px 6px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+div.third select {
+  max-width:90%;
+  width:85%;
+}
+#rtable_filter{display:none;}
+.dataTables_filter{background-color:transparent;}
+table#rtable thead{background-color:transparent;}
+table#rtable tr{line-height:2em;}
+table.display thead th{color:#A82400;}
+table.display thead th.sorting_disabled{color:#22241E;}
+.sorting_asc, .sorting_desc{box-shadow:none;}
+.sorting_asc{
+  background:url("http://layout.canadensys.net/common/images/dataTables/sort_asc_red.png") no-repeat scroll right center transparent;
+}
+.sorting_desc{
+  background:url("http://layout.canadensys.net/common/images/dataTables/sort_desc_red.png") no-repeat scroll right center transparent;
+}
+tr.even td.sorting_1{background-color:transparent;}
+#rtable_info{display:none;}
+.paginate_disabled_previous, .paginate_disabled_next{cursor:default;}
+.container_24, .container_24 .grid_18, .container_24 .grid_24{width:auto;}
+.container_24 .suffix_6{padding:0px;width:100%;}
+.container_24 .grid_17{width:100%;}
+.container_24 .pull_6 {left:0px;}
+.container_24 .push_18{position:absolute;right:0px;left:auto;min-width:275px;}
+form.half{
+  width:50%;
+}
+.topForm label {
+    display: block;
+    font-size: 12px;
+    line-height:1.5em;
+    margin-top:10px;
+ }
+
+
+.topForm input {
+  margin:0 0 0 0.5em;
+  width:90%;
+ }
+
+
+.topForm p {margin:0px 20px 20px;}
+.topForm div.right {margin-top:0px; text-align:left;}
+.topForm button{display:block;}
+.topForm div.item:last-child{clear:both;}
+div.item div.right {margin-top:0px;margin-bottom:10px;}
+div.tempo div.right{margin-top:10px;margin-bottom:10px;}
+div.buttons{margin-bottom:20px;}
+div.groupmenu ul li {
+  margin-left: 0;
+  margin-right: 20px;
+ }
+
+
+.checkbox div {display:inline;}
+.checkbox input {width:5%;}
+#config div.checkbox{
+  padding-top:0px;
+ }
+
+
+#location>label{
+  display:block;
+ }
+div.item{margin-bottom:10px;}
+div.roles{width:250px;margin-top:15px;}
+div.roles label{font-weight:bold;display:inline;}
+div.halfcolumn a[id*="copyDetails-"], div.halfcolumn a[id*="removeLink-"] { float:none; }
+div.conceptItem{float:none;clear:both;}
+div.groupmenu ul{clear:both;margin-top:0px;}
+div.info{line-height:1.5em;}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #666;
+  background: #dbf0e8;
+ }
+
+td.separator{
+  border-right:0px;
+ }
+#resourcedoi{
+  display:none;
+ }
+#zone-footer-wrapper{display:none;height:0px;}
+#section-footer{height:90px;}
+#footer_content{text-align:left;}
+#footer_content div.right{
+  font-size:1em;
+  margin:0px;
+  text-align:left;
+  width:500px;
+ }
+
+#footer_content ul li{margin:0px;}
+.ui-widget-header{
+  background:-moz-linear-gradient(bottom,#a82400 0,#6a0c00 100%);
+  background:-ms-linear-gradient(bottom,#a82400 0,#6a0c00 100%);
+  background:-o-linear-gradient(bottom,#a82400 0,#6a0c00 100%);
+  background:-webkit-linear-gradient(bottom,#a82400 0,#6a0c00 100%);
+  background:linear-gradient(bottom,#a82400 0,#6a0c00 100%);
+  background-color:#961b00;
+  color:#fff;
+ }
+
+#language-menu{
+  background-color:#fff;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  padding:10px;
+  position:relative;
+  float:right;
+  -webkit-box-shadow:  0px 0px 10px 0px rgba(200, 200, 200, 0.4);
+  box-shadow:  0px 0px 10px 0px rgba(200, 200, 200, 0.4);
+  font-size:0.9em;
+}
+
+.dataTables_paginate{
+    height:0px;
+    overflow:hidden;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0px !important;
+}
+
+#newuser div.userManageButtons input {
+    width: auto;
+    padding: 10px;
+    font-size: 15px;
+    line-height: normal;
+}
+
+#newuser input {
+    width: 85%;
+    padding: 10px;
+    line-height: normal;
+}
+
+.separator:before {
+    height: 0px !important;
+}
+
+input {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: normal !important;
+    padding: 3px 10px !important;
+}
+
+div.resourceOverview div.titleOverview {
+    width: 390px !important;
+}
