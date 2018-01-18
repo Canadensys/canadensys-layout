@@ -3,7 +3,7 @@ Static files, images, pages used accross Canadensys Websites
 
 ## Sources:
 
-###jscookie
+### jscookie
 [Jscookie for cookies](https://github.com/js-cookie/js-cookie)
 
 ### bootstraps
