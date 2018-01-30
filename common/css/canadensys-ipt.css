@@ -369,3 +369,7 @@ input {
 div.resourceOverview div.titleOverview {
     width: 390px !important;
 }
+
+.navbar-nav > li {
+    margin-left:0px;
+}
