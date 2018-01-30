@@ -37,6 +37,18 @@ function setActive(){
         document.getElementById("nav_images").className += " active";
         b = 1;
     }
+    else if(l.indexOf("data.canadensys.net/ipt") > -1) {
+        document.getElementById("nav_repository").className += " active";
+        b = 0;
+    }
+    else if(l.indexOf("data.canadensys.net/vascan") > -1) {
+        document.getElementById("nav_vascan").className += " active";
+        b = 0;
+    }
+    else if(l.indexOf("data.canadensys.net/tools") > -1) {
+        document.getElementById("nav_tools").className += " active";
+        b = 0;
+    }
     if (b==1){
         document.getElementById("nav_explorer").className += " active";
     }
