@@ -4,8 +4,8 @@
  */
  
 var Cookies2 = Cookies.noConflict();
-var biocacheURL = "http://explorer-ws.canadensys.net";
-var collectoryWSUrl = "http://collections.canadensys.net/ws";
+var biocacheWS = "http://explorer-ws.canadensys.net";
+var collectoryWS = "http://collections.canadensys.net/ws";
 
 $(document).ready(function () {
     /* Languages */
@@ -107,14 +107,14 @@ function addCurrentDate(sL) {
 
 function totalRecord(){
     var xhr = new XMLHttpRequest();
-    var url = biocacheURL+'/occurrences/search?q=*:*&pageSize=0';
+    var url = biocacheWS+'/occurrences/search?q=*:*&pageSize=0';
     console.log(url)
     xhr.open('GET', url);
     xhr.addEventListener('readystatechange', function() {
         if (xhr.readyState === 4 && xhr.status == 200) {
             console.log(xhr.responseText);
             var response = JSON.parse(xhr.responseText);
-            var totalRecord = lisibilite_nombre(response.totalRecords);
+            var totalRecord = view_number(response.totalRecords);
             $('#totalRecordEN').append(''+totalRecord);
             $('#totalRecordFR').append(''+totalRecord);
             console.log(totalRecord);
@@ -129,7 +129,7 @@ function getTotFromCollectoryWS(url,dest){
     xhr.addEventListener('readystatechange', function() {
         if (xhr.readyState === 4) {
             var response = JSON.parse(xhr.responseText);
-            var tot = lisibilite_nombre(response.total);
+            var tot = view_number(response.total);
             console.log(tot);
             $(dest).append(tot);
         }
@@ -138,7 +138,7 @@ function getTotFromCollectoryWS(url,dest){
 }
 
 function totalDatasets(){
-    var url = collectoryWSUrl+'/dataResource/count';
+    var url = collectoryWS+'/dataResource/count';
     var dest = '#totalDatasetsFR';
     getTotFromCollectoryWS(url,dest);
     dest = '#totalDatasetsEN';
@@ -146,7 +146,7 @@ function totalDatasets(){
 }
 
 function totalCollections(){
-    var url  = collectoryWSUrl+'/collection/count';
+    var url  = collectoryWS+'/collection/count';
     var dest = '#totalCollectionsFR';
     getTotFromCollectoryWS(url,dest);
     dest = '#totalCollectionsEN';
@@ -154,25 +154,25 @@ function totalCollections(){
 }
 
 function totalInstitutions(){
-    var url = collectoryWSUrl+'/institution/count';
+    var url = collectoryWS+'/institution/count';
     var dest = '#totalInstitutionsFR';
     getTotFromCollectoryWS(url,dest);
     dest = '#totalInstitutionsEN';
     getTotFromCollectoryWS(url,dest);
 }
 
-function lisibilite_nombre(nbr)
+function view_number(nbr)
 {
-    var nombre = ''+nbr;
-    var retour = '';
-    var count=0;
-    for(var i=nombre.length-1 ; i>=0 ; i--)
+    var number = ''+nbr;
+    var back   = '';
+    var count  = 0;
+    for(var i=number.length-1 ; i>=0 ; i--)
     {
         if(count!=0 && count % 3 == 0)
-            retour = nombre[i]+' '+retour ;
+            back = number[i]+' '+back ;
         else
-            retour = nombre[i]+retour ;
+            back = number[i]+back ;
         count++;
     }
-    return retour;
+    return back;
 }
