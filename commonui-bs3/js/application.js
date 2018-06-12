@@ -1,12 +1,13 @@
 // initialise plugins
 $(function(){
-
+    
+    // NEED TO BE CHANGED WITH CANADENSYS URL
     var autocompleteUrl = 'https://bie.ala.org.au/ws/search/auto';
-
+    
     if(typeof BIE_VARS != 'undefined' && BIE_VARS.autocompleteUrl){
         autocompleteUrl = BIE_VARS.autocompleteUrl;
     }
-
+    
     // autocomplete on navbar search input
     $("#biesearch").autocomplete(autocompleteUrl, {
         extraParams: {limit: 100},

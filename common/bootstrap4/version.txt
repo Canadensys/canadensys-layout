@@ -1,0 +1,4 @@
+bootstrap version 4.1.1
+jQuery    version 3.3.1
+Poppers   version 1.14.3
+Tooltip   version 1.2.0
