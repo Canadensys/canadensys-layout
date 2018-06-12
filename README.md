@@ -8,3 +8,4 @@ Static files, images, pages used accross Canadensys Websites
 * [bootstrap v3.3.7](https://github.com/twbs/bootstrap/releases/tag/v3.3.7)
 * [ALA commonui-bs2](https://github.com/AtlasOfLivingAustralia/commonui-bs2)
 * [ALA commonui-bs3](https://github.com/AtlasOfLivingAustralia/commonui-bs3)
+* [Icons](https://fontawesome.com/)
