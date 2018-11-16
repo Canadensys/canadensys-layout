@@ -300,7 +300,8 @@
 
 
   /*-- Footer --*/
-
+  /*REMOVE FOOTER DUE TO alc-styles.css and bootstrap*/
+  /*
   #footer {
     background: -moz-linear-gradient(bottom, #a82400 0%, #6a0c00 100%); 
     background: -ms-linear-gradient(bottom, #a82400 0%, #6a0c00 100%);
@@ -313,6 +314,7 @@
     width: 100%;
     z-index: 1;
   }
+  */
   #footer_content {
     clear: both;
     color: #f0babb;
