@@ -46,7 +46,7 @@ strong{color:#5f5d60;}
 .navbar .container {width: auto;}
 .navbar .container-navbar {margin-top: 12px;padding:0 15px;}
 .navbar .navbar-inner {min-height: 50px;}
-.navbar .brand {padding:0 15px 15px 15px;margin-left:-15px;}
+.navbar .brand {padding:0 15px 15px 15px;margin-left:0;}
 .navbar-inner  img.brand {max-height: 20px;margin-top: 2px;}
 .navbar-inner a.brand {display: block;float: left;color: #f47a61;font-size: 16px;padding-right: 15px;font-weight:900;}
 .navbar-inner ul.nav > li > a,.navbar-inner  a.brand {padding: 15px 10px;line-height: 20px;text-shadow: none;}
