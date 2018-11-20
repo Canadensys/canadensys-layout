@@ -38,7 +38,7 @@ input {
 
 
 /*-- Header --*/
-
+/*
 #header {
 	background: -moz-linear-gradient(bottom, #6a0c00 0%, #a82400 100%);	
 	background: -ms-linear-gradient(bottom, #6a0c00 0%, #a82400 100%);
@@ -49,7 +49,7 @@ input {
 	height: 120px;
 	position: relative;
 }
-
+*/
 #header_content {
 	color: #f0babb;
 	margin: 0 auto;
@@ -269,7 +269,7 @@ body > #body {
 
 
 /*-- Footer --*/
-
+/*
 #footer {
 	background: -moz-linear-gradient(bottom, #a82400 0%, #6a0c00 100%);	
 	background: -ms-linear-gradient(bottom, #a82400 0%, #6a0c00 100%);
@@ -278,10 +278,10 @@ body > #body {
 	background: linear-gradient(bottom, #a82400 0%, #6a0c00 100%);
 	background-color: #961b00;
 	clear: both;
-	/*height: 90px;*/
+	height: 90px;
 	width: 100%;
 	z-index: 1;
-}
+}*/
 #footer_content {
 	clear: both;
 	color: #f0babb;
