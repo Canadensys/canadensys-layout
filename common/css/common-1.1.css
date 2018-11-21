@@ -599,6 +599,12 @@
   }
 
 
+  /*-- Reserved VASCAN classes --*/
+
+  form.custom_form select {
+    color: #a8a7a5;
+  }
+  
   /*-- Reserved WordPress classes for images --*/
 
   .alignright { float: right; }
