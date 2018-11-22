@@ -513,7 +513,7 @@
     cursor: pointer;
     display: block;
     font-size: 15px;
-    height: 55px; /* 3 + 42 + 3 */
+    height: 55px; /* 3 + 48 + 3 */
     line-height: 55px;
     padding: 0 63px 0 15px;  /* 48 icon + 9 padding */
   }
@@ -525,7 +525,7 @@
   .big_button.multi_line {
     height: 100%!important;
     line-height: 22px;
-    min-height: 48px;
+    min-height: 55px;
   }
 
   ul.index {
@@ -822,7 +822,7 @@
       font-size: 15px;
   /*  width: 240px; */
       padding: 0 63px 0 15px;  /* 48 icon + 9 padding */
-      height: 48px; /* 3 + 42 + 3 */
+      height: 55px; /* 3 + 48 + 3 */
       line-height: 48px;
       background-color: #e7e7e7!important;
       cursor: pointer;
@@ -836,7 +836,7 @@
   }
   .big_button.multi_line {
       line-height: 22px;
-      min-height: 48px;
+      min-height: 55px;
       height: 100%!important;
   }
 
