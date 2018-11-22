@@ -263,7 +263,7 @@
   /*-- Sidemenu --*/
 
   #side_bar {
-    font-size: 1.5em;
+    font-size: 1.1em;
     padding-right: 36px;
     position: absolute;
     right: 0;
@@ -447,7 +447,7 @@
   form.custom_form { padding: 0 36px; }
   form.custom_form input[type=text] {
     font-size: 1em;
-    height: 21px;
+    height: 27px;
     margin-right: 18px; /* for button */
     width: 330px;
   }
@@ -513,8 +513,8 @@
     cursor: pointer;
     display: block;
     font-size: 15px;
-    height: 48px; /* 3 + 42 + 3 */
-    line-height: 48px;
+    height: 55px; /* 3 + 42 + 3 */
+    line-height: 55px;
     padding: 0 63px 0 15px;  /* 48 icon + 9 padding */
   }
   p .big_button { margin: 0 0 18px; }
@@ -591,20 +591,37 @@
 
 
   #print_page {
-      background: url("http://layout.canadensys.net/common/images/icons/button-printer_b.png") center right no-repeat;
+      background: url("http://layout.canadensys.net/common/images/icons/button-printer_b_w50.png") center right no-repeat;
   }
   #print_page:hover,
   #print_page:focus {
-      background: url("http://layout.canadensys.net/common/images/icons/button-printer_r.png") center right no-repeat;
+      background: url("http://layout.canadensys.net/common/images/icons/button-printer_r_w50.png") center right no-repeat;
   }
 
-
-  /*-- Reserved VASCAN classes --*/
-
+  /*-- VASCAN classes --*/
+  #search_box {
+    /*padding-top:10px !important;*/
+  }
+  #search_box p.inputs {
+    margin: 30px 0;
+  }
+  #map_selector {
+    /*width: 50%;*/
+  }
+  #checklist_distribution li,
+  #checklist_distribution span {
+    font-size: 0.9em;
+  }
+  #checklist_footer,
+  #checklist_header {
+    margin-top:10px;
+  }
+  #checklist_box {
+    margin-bottom:10px;
+  }
   form.custom_form select {
-    color: #a8a7a5;
+    color: #a82400;
   }
-  
   /*-- Reserved WordPress classes for images --*/
 
   .alignright { float: right; }
