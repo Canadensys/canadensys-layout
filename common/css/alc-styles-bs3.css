@@ -528,6 +528,11 @@ a:focus {
     background-color:#fff;
     background-repeat:initial;
     border-color:transparent;
+    height:100%;
+}
+
+.data-menu{
+    width:250px;
 }
 
 @media only screen and (max-width: 768px){

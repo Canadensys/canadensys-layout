@@ -5,6 +5,10 @@
  they can create their own modernizr.js with the desired supported elements. They only have to replace the 'default'
  file with their own.
 */
+.dropdown-menu > li {
+  margin-left:0px;
+}
+
 #page{
   margin:0px;
   min-height:100%;
