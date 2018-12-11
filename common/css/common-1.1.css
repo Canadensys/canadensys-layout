@@ -237,7 +237,7 @@
   .fullscreen { width: 100% !important; }
 
   #content {
-    font-size: 1.35em;
+    font-size: 1em;
     font-weight: normal;
     margin-right: 336px; /* for side_bar */
     line-height: 1.5em;
@@ -385,6 +385,7 @@
   #content h2, #view h2 {
     border-bottom: 2px solid #22241e;
     font-size: 1.3em;
+    padding-bottom:15px;
   }
   #content h1 .edit {
     float: right;
@@ -738,7 +739,7 @@
   }
 
   #content {
-      font-size: 1.35em;
+      font-size: 1em;
       line-height: 1.5em;
       font-weight: normal;
       text-align: justify;
