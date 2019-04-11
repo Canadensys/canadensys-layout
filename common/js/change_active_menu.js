@@ -37,6 +37,31 @@ function setActive(){
         document.getElementById("nav_images").className += " active";
         b = 1;
     }
+    
+    if(l.indexOf("data.canadensys.net/explorer-ws") > -1) {
+        document.getElementById("nav_explorer_ala_ws").className += " active";
+        b = 1;
+    }
+    else if(l.indexOf("data.canadensys.net/explorer") > -1) {
+        document.getElementById("nav_explorer_ala").className += " active";
+        b = 1;
+    }
+    else if(l.indexOf("data.canadensys.net/collections/ws") > -1) {
+        document.getElementById("nav_collections_ws").className += " active";
+        b = 1;
+    }
+    else if(l.indexOf("data.canadensys.net/collections/datasets") > -1) {
+        document.getElementById("nav_datasets").className += " active";
+        b = 1;
+    }
+    else if(l.indexOf("data.canadensys.net/collections") > -1) {
+        document.getElementById("nav_collections").className += " active";
+        b = 1;
+    }
+    else if(l.indexOf("data.canadensys.net/images") > -1) {
+        document.getElementById("nav_images").className += " active";
+        b = 1;
+    }
     else if(l.indexOf("data.canadensys.net/ipt") > -1) {
         document.getElementById("nav_repository").className += " active";
         b = 0;
@@ -49,7 +74,9 @@ function setActive(){
         document.getElementById("nav_tools").className += " active";
         b = 0;
     }
+
     if (b==1){
         document.getElementById("nav_explorer").className += " active";
     }
+
 }
